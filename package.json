@@ -1,0 +1,23 @@
+{
+  "name": "metropole-garage",
+  "version": "1.0.0",
+  "description": "Sistema de Garagem para FiveM - Projeto Técnico",
+  "author": "Leonardo Peixoto",
+  "license": "MIT",
+  "scripts": {
+    "build": "node esbuild.config.js",
+    "watch": "esbuild --watch --bundle --platform=browser --target=es2017 --outdir=client client/garage.ts && esbuild --watch server/database.ts server/garage.ts --outdir=server --platform=node --format=cjs --external=mysql2",
+    "dev": "npm run build && echo 'Build concluído. Execute o servidor no FiveM.'",
+    "clean": "del /s *.js"
+  },
+  "dependencies": {
+    "mysql2": "^3.14.1"
+  },
+  "devDependencies": {
+    "@citizenfx/client": "^2.0.14758-1",
+    "@citizenfx/server": "^2.0.14758-1",
+    "@types/node": "^22.15.3",
+    "esbuild": "^0.19.11",
+    "typescript": "^5.3.3"
+  }
+}

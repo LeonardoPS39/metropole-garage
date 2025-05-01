@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "target": "ES2017",
+    "module": "commonjs",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "rootDir": "./",
+    "outDir": "./",
+    "allowJs": false,
+    "declaration": false,
+    "sourceMap": false,
+    "baseUrl": ".",
+    "paths": {
+      "*": ["typings/fivem/*"]
+    }
+  },
+  "include": [
+    "client/**/*.ts",
+    "server/**/*.ts",
+    "shared/**/*.ts",
+    "typings/fivem/**/*",
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
