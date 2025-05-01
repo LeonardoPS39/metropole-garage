@@ -4,6 +4,8 @@ Sistema de garagem para FiveM feito com TypeScript, React e banco de dados MySQL
 
 ---
 
+## [`Documentação técnica`](./Documentation.md)
+
 ## 📦 Funcionalidades
 
 - Comando `/garage` abre uma interface React com todos os veículos do jogador.
@@ -48,13 +50,17 @@ Sistema de garagem para FiveM feito com TypeScript, React e banco de dados MySQL
 ## 📂 Build do projeto
 
 ### 🔧 Build do recurso
-```npm install```
-```npm run build```
+```
+npm install
+npm run build
+```
 
 ### 🔧 Build da NUI (nui/)
-```cd nui``` 
-```npm install```
-```npm run build```
+```
+cd nui 
+npm install
+npm run build
+```
 
 ---
 
